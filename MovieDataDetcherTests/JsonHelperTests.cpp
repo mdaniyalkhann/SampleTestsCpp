@@ -49,7 +49,6 @@ TEST(JsonTests, GetMatchingTitleIdFromMovieList_PassEmptyJsonString_ThrowInvalid
 
 TEST(JsonTests, GetMatchingTitleIdFromMovieList_PassEmptyList_ThrowMovieNotFoundException)
 {
-	
 	std::string input = "{\"page\":1,\"results\":[],\"total_results\":0,\"total_pages\":1}";
 
 	
