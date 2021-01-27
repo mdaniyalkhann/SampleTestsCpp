@@ -11,6 +11,8 @@ void FileErrorRepository::LogBadMovie(std::string movieName)
 	if(!errorLogFile.is_open())
 	{
 		// TODO: handle error
+		
+		
 	}
 
 	errorLogFile << movieName << endl;
