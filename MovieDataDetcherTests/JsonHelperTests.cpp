@@ -8,6 +8,7 @@ TEST(JsonTests, GetMatchingTitleIdFromMovieList_PassOnlyOneMovieWithRightName_Re
 {
 	std::string input = "{\"page\":1,\"results\":[{\"poster_path\":\"\/xfWac8MTYDxujaxgPVcRD9yZaul.jpg\",\"adult\":false,\"overview\":\"After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under his wing and trains him to defend the world against evil.\",\"release_date\":\"2016-10-25\",\"genre_ids\":[28,12,14,878],\"id\":284052,\"original_title\":\"Another Movie\",\"original_language\":\"en\",\"title\":\"Another Movie\",\"backdrop_path\":\"\/tFI8VLMgSTTU38i8TIsklfqS9Nl.jpg\",\"popularity\":26.528495,\"vote_count\":1967,\"video\":false,\"vote_average\":6.7}],\"total_results\":1,\"total_pages\":1}";
 
+	
 	auto result = JsonHelper::GetMatchingTitleIdFromMovieList("Doctor Strange", input);
 
 	ASSERT_EQ(result, "284052");
